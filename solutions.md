@@ -7,6 +7,7 @@
 + SELECT * FROM movies;
 
 ### SQL Lesson 2: Queries with constraints (Pt. 1)
+
 + SELECT *
   FROM Movies
   WHERE id = 6
