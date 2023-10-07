@@ -1,0 +1,2 @@
+# SQLBolt
+exercises-solutions
