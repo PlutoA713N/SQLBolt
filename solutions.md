@@ -21,3 +21,13 @@
    WHERE Year <= 2003;
 
 ### SQL Lesson 3: Queries with constraints (Pt. 2)
+
++ SELECT * FROM Movies
+  WHERE Title LIKE "%Toy Story%"  || SELECT * FROM MOVIESwhere title like "toy story%"
++ SELECT * FROM Movies
+  WHERE Director = "John Lasseter"
++ SELECT * FROM Movies
+  WHERE Director != "John Lasseter"
++ SELECT * FROM Movies
+  WHERE Title LIKE '%wall%' || select * from movieswhere title like 'wall-_'
+
