@@ -1,9 +1,10 @@
 ## SQL Lesson 1: SELECT queries 101
-SELECT title FROM movies;
-SELECT director FROM movies;
-SELECT title, director FROM movies;
-SELECT title, year FROM movies;
-SELECT * FROM movies;
+
++ SELECT title FROM movies;
++ SELECT director FROM movies;
++ SELECT title, director FROM movies;
++ SELECT title, year FROM movies;
++ SELECT * FROM movies;
 
 ### SQL Lesson 2: Queries with constraints (Pt. 1)
 + SELECT *
