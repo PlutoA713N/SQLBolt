@@ -71,3 +71,42 @@
 ## SQL Lesson 6: Multi-table queries with JOINs
 
 
++ select * from Movies
+  join Boxoffice
+  on Movies.id = Boxoffice.Movie_id;
++ select * from movies
+  join boxoffice
+  on movies.id = boxoffice.movie_id
+  where international_sales > domestic_sales
++ select * from movies
+  join boxoffice
+  on movies.id = boxoffice.movie_id
+  order by rating desc;
+
+
+## SQL Lesson 7: OUTER JOINs
+
+
++ select distinct building from employees
++ select building_name, capacity from buildings
++ select distinct building_name, role
+  from buildings
+  left join employees
+  on buildings.building_name = employees.building;
+
+
+## SQL Lesson 8: A short note on NULLs
+
++ select name, role
+  from employees
+  where building isNull;
++ SELECT DISTINCT building_name
+  FROM buildings 
+  LEFT JOIN employees
+    ON building_name = building
+  WHERE role IS NULL;
+
+
+
+
+
