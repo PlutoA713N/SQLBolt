@@ -123,4 +123,19 @@
   where year % 2 = 0
 
 
+##  SQL Lesson 10: Queries with aggregates (Pt. 1)
+
+
++  select max(years_employed) as longest_time
+   from employees
++ select role, avg(years_employed) as average
+  from employees
+  group by role;
++ select building, sum(years_employed) as service
+  from employees
+  group by building
+
+
+
+
 
