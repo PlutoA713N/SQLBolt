@@ -107,6 +107,20 @@
   WHERE role IS NULL;
 
 
+## SQL Lesson 9: Queries with expressions
+
+
++ select title, (boxoffice.domestic_sales + boxoffice.international_sales)/ 1000000 as sales
+ from movies
+ join boxoffice
+  boxoffice.movie_id = movies.id
++ SELECT title, rating * 10 AS rating_percent
+  FROM movies
+  JOIN boxoffice
+    ON movies.id = boxoffice.movie_id;
++ select title 
+  from movies
+  where year % 2 = 0
 
 
 
