@@ -136,6 +136,58 @@
   group by building
 
 
+## SQL Lesson 11: Queries with aggregates (Pt. 2)
 
 
++ select count(role) as Artists_count
+  from employees
+  where role = 'Artist' ||
+  select role, count(role) as Total_artists
+  from employees
+  group by role
+  having role = 'Artist'
++ select role, count(role) as employees_count
+  from employees
+  group by role
++ select role, sum(years_employed) as total_years
+  from employees
+  where role = "Engineer" ||
+  select role, sum(years_employed) as Total_engineers
+   from employees
+   group by role
+   having  role = "Engineer"
+
+## SQL Lesson 12: Order of execution of a Query
+
+
++ select director, count(director) as total_movies
+  from movies
+  group by director
++ select director, sum(boxoffice.domestic_sales + boxoffice.international_sales) as total_sales
+ from movies
+inner join boxoffice
+ on movies.id = boxoffice.movie_id
+group by director
+
+
+## SQL Lesson 13: Inserting rows
+
+
++ INSERT INTO movies VALUES (4, "Toy Story 4", "El Directore", 2015, 90);
++ INSERT INTO boxoffice VALUES (4, 8.7, 340000000, 270000000);
+
+
+## SQL Lesson 14: Updating rows
+
+
++   update movies
+    set director = "John Lasseter"
+    where id = 2
++   UPDATE movies
+    SET year = 1999
+    WHERE id = 3;
++   update movies
+    set title = 'Toy Story 3',
+    set director = 'Lee Unkrich'
+    where title = 'Toy Story 8'
 
