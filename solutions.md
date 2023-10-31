@@ -191,3 +191,11 @@ group by director
     set director = 'Lee Unkrich'
     where title = 'Toy Story 8'
 
+## SQL Lesson 15: Deleting rows
+
+
+
++ delete from movies
+  where year < 2005;
++ delete from movies
+  where director = "Andrew Stanton";
