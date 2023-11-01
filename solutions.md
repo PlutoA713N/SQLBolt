@@ -199,3 +199,29 @@ group by director
   where year < 2005;
 + delete from movies
   where director = "Andrew Stanton";
+
+
+##  SQL Lesson 16: Creating tables
+
+
++ CREATE TABLE Database (
+    Name TEXT,
+    Version FLOAT,
+    Download_count INTEGER
+);
+
+
+## SQL Lesson 17: Altering tables
+
+
++ alter table movies
+  add aspect_ratio float;
++ alter table movies
+  add language text default english;
+
+
+## SQL Lesson 18: Dropping tables
+
+
++ drop table if exists movies;
++ drop table if exists boxoffice;
